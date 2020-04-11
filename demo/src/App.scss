@@ -1,0 +1,49 @@
+body {
+  height: 100%;
+  width: 100%;
+}
+
+
+#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  .mainZone {
+    background-color: #F9F9F9;
+    flex-grow: 1;
+
+    .inputInfo {
+      margin-top: 10px;
+    }
+
+    .gallery {
+      padding: 50px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 15px;
+      //overflow: scroll;
+
+      &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.centerVerically {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinning {
+  height: 100%;
+}
+
+.spinning img {
+  display: none;
+}
