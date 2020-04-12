@@ -56,14 +56,14 @@ npm i onimagesdidload-ts
 ```
 2.Then import it in your tsx component:
 ```js
-import onImagesDidLoad from "onimagesdidload-ts";
+import OnImagesDidLoad from "onimagesdidload-ts";
 ```
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
 ```tsx
- <onImagesDidLoad
+ <OnImagesDidLoad
     onLoaded={callback} /* start your logic when images are loaded */
     doesImagesUpdated={boolean} /* boolean to inform onImagesDidLoad component that there is new images */
     classNameWhileLoading={" ... "}/* CSS Classes while loading */
@@ -74,13 +74,13 @@ import onImagesDidLoad from "onimagesdidload-ts";
        
     </div>
     
-  </onImagesDidLoad>
+  </OnImagesDidLoad>
     
 ```
 ### Props
 
 *   `onLoaded  [Required] : ` callback function to start your logic when images are loaded,
-*  `doesImagesUpdated [Required] : ` boolean to inform onImagesDidLoad component that there is new images ( so onImagesDidLoad will restart his process)
+*  `doesImagesUpdated [Required] : ` boolean to inform OnImagesDidLoad component that there is new images ( so OnImagesDidLoad will restart his process)
 *  `classNameWhileLoading [optional] : ` prefix css classes added to the container element while images are loading <br /> default `.spinning`,
 *  `classNameOnloaded [optional] : `prefix css classes added to the container element when images are loading <br />default `.imagesLoaded`,
 
